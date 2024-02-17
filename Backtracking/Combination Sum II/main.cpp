@@ -26,15 +26,7 @@ void backtrack(int index, int sum){
     }
 
 
-    for(int i = index; i<6; i++){ 
-        if(i>index && arr[i] == arr[i-1]) continue; 
-        if(arr[i] > target) break; 
-        // pick element
-        ds.push_back(arr[i]); 
-        backtrack(i+1, sum + arr[i]); 
-        // pick maybe the next element
-        ds.pop_back(); 
-    }
+    
 
 
 
